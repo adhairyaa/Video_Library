@@ -1,0 +1,29 @@
+
+:root {
+  --primaryDark:#553939;
+  --primaryLight:#D6CDA4;
+}
+
+.light{
+  background-color: white;
+  color:black
+}
+.dark{
+  background-color: black;
+  color: white
+}
+.Navbar{
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  border-right:grey solid 2px ;
+  width: 8%;
+  padding-left: 1em;
+}
+.Navbar_icons{
+  font-size: 2em;
+}
+.Home{
+  margin-left: 25%;
+}
+

@@ -1,0 +1,25 @@
+.Topbar{
+    position: relative;
+    display:flex;
+    border-bottom: grey solid 2px;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Topbar_logo{
+display: flex;
+align-items: center;
+}
+
+.searchbar{
+    width: 40%;
+    height: 2em;
+}
+.Topbar_element{
+    font-size: x-large;
+    display: flex;
+    gap: 2em;
+    margin-right: 4em;
+}
