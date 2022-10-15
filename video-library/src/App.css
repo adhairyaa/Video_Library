@@ -2,18 +2,25 @@
 :root {
   --primaryDark:#553939;
   --primaryLight:#D6CDA4;
+  font-family: 'Prompt', sans-serif;
+margin-bottom: 2em;
+
 }
 
 .light{
+  
   background-color: white;
   color:black
 }
 .dark{
+  
   background-color: black;
   color: white
 }
 .Navbar{
+  
   display: flex;
+  position: fixed;
   gap: 2em;
   flex-direction: column;
   border-right:grey solid 2px ;
@@ -23,7 +30,9 @@
 .Navbar_icons{
   font-size: 2em;
 }
-.Home{
-  margin-left: 25%;
+.Content_Wrapper{
+  margin-left: 15%;
+  margin-top: 8%;
 }
+
 

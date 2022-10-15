@@ -1,14 +1,19 @@
+import { useDataProvider } from '../Context/Reducer'
 import styles from './Pages.module.css'
 
 export default function History() {
-
+const {state} = useDataProvider()
     return(
         <div>
-        <h3>History</h3>
+        <h1>History</h1>
         <div className={styles.Page_Wrapper}>
-            aaa
-
+         You have {state.History.length} Video's in History.
+         <div className={styles.Page_Wrapper_Length}> {state.History.length}</div>
         </div>
+        <div>
+        {state.History.map((Video)=><ul>{Video.VideoLink}</ul>)}
+        </div>
+        
         </div>
     )
 }

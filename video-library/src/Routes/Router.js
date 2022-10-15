@@ -5,6 +5,7 @@ import Liked from '../Pages/Liked'
 import Playlist from '../Pages/Playlist'
 import Watchlist from '../Pages/Watchlist'
 import History from '../Pages/History'
+import VideoPlayer from "../Pages/VideoPlayer";
 
 export default function Router (){
 
@@ -16,6 +17,7 @@ export default function Router (){
                 <Route path="/liked" element={<Liked />}/>
                 <Route path="/Playlist" element={<Playlist />}/>
                 <Route path="/Watchlist" element={<Watchlist />}/>
+                <Route path="/Video/:Video" element={<VideoPlayer />}/>
             </Routes>
         </div>
     )

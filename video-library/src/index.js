@@ -3,19 +3,19 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import  {ThemeProvider}  from "./Context/ThemeProvider";
-import  {DataProvider}  from "./Context/Reducer";
-import {BrowserRouter as Router} from "react-router-dom";
+import { ThemeProvider } from "./Context/ThemeProvider";
+import { DataProvider } from "./Context/Reducer";
+import { BrowserRouter as Router } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router> 
+    <Router>
       <DataProvider>
         <ThemeProvider>
           <App />
         </ThemeProvider>
       </DataProvider>
-     </Router>
+    </Router>
   </React.StrictMode>
 );
 
